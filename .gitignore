@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/text,web,emacs,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=text,web,emacs,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/text,emacs,web,visualstudiocode,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=text,emacs,web,visualstudiocode,macos
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
@@ -52,6 +52,39 @@ flycheck_*.el
 /network-security.data
 
 
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
+
 ### Text ###
 *.doc
 *.docx
@@ -97,4 +130,4 @@ flycheck_*.el
 *.wat
 *.xhtml
 
-# End of https://www.toptal.com/developers/gitignore/api/text,web,emacs,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/text,emacs,web,visualstudiocode,macos
