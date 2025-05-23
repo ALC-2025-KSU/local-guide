@@ -17,7 +17,8 @@ html {
 body {
   /* font-family: "Noto Serif JP", serif; */
   font-family: "Noto Sans JP", sans-serif;
-  background-color: #EDE5C2;
+  background-color: antiquewhite;
+  /* background-color: #EDE5C2; */
 }
 
 /*
@@ -27,7 +28,7 @@ header {
   position: fixed;
   top: 0;
   margin-left: 1rem;
-  background-color: #EDE5C2;
+  background-color: inherit;
   width: 100%;  /* 右端まで伸ばしておく */
   z-index: 10;  /* 隠されないようにする。10 という値は適当。 */
 }
@@ -177,7 +178,7 @@ header .navi {
   /* display: flex; */
   font-size: 1.4rem;
   text-align: center;
-  background-color: #EDE5C2;
+  background-color: inherit;
 }
 
 header .navi .current {
