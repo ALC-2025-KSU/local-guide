@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- デバイスの幅に合せて表示する -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Travel Information - ASL 2025</title>
+
+    <!-- スタイルを一旦すべてリセットする -->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+
+    <!-- Google Fonts を使うための設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- 我々独自のスタイルシート -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--
+        スタイル指定を直接このファイル書きたければ style タグで記述する。
+        (できれば避けたほうが良いだろう。)
+    -->
+    <style>
+    </style>
+</head>
+<body>
+<header>
+    <p>ALC 2025</p>
+    <!-- ページ上部のナビゲーション -->
+    <nav>
+        <table>
+            <tbody class="navi">
+            <!-- ナビ本体 -->
+            <tr>
+            <td><a href="index.html">Top</a></td>
+            <td><a href="travel.html">Travel</a></td>
+            <td><a href="campus-map.html">Campus Map</a></td>
+            <td><a href="lunch.html">Lunch</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </nav>
+</header>
+<main>
+    <!-- タイトルを大きく表示 -->
+    <h1 class="noto-sans-jp-title title">Getting to Kyoto</h1>
+    <p class="large alert">
+        ! This page is under construction. !
+    </p>
+    
+    <!-- 関空から京都へ -->
+    <h2 id="from-KIX">From Kansai Airport (KIX)</h2>
+    <ul>
+        <!-- 「はるか」を使うプラン -->
+        <li>Route 1: (easy and fast)
+        <p class="route-start">Kansai Airport</p>
+        <p class="downarrow route-via">
+            The JR Haruka limited express (approx. 1h 10min)
+        </p>
+        <p class="route-end">JR Kyoto Station</p>
+        </li>
+        <!-- 関空快速 + 京都線新快速 -->
+        <li>Route 2: (cheap)
+        <p class="route-start">
+            Kansai Airport
+        </p>
+        <p class="downarrow route-via">
+            JR Kansaikuko Line Kanku-Rapid (approx. 1h 10min)
+        </p>
+        <p class="route-via">
+            JR Osaka Station (transfer)
+        </p>
+        <p class="downarrow route-via">
+            JR Kyoto Line Special Rapid
+            (approx. 30min)
+        </p>
+        <p class="route-end">JR Kyoto Station</p>
+        </li>
+        <!-- リムジンバス -->
+        <li>Route 3: (easy)
+        <p class="route-start">Kansai Airport</p>
+        <p class="downarrow route-via">
+            Kansai Airport Limousine
+            (approx. 1h 30min)
+        </p>
+        <p class="route-end">Kyoto Sta. Hachijo-guchi</p>
+        </li>
+    </ul>
+    <!-- 神戸空港から -->
+    <h2 id="from-UKB">From Kobe Airport (UKB)</h2>
+    <ul>
+        <li>Route:
+        <p class="route-start">Kobe Airport</p>
+        <p class="downarrow route-via">
+            Portliner (Kobe New Transit railway)
+            (&lt; 20min)
+        </p>
+        <p class="route-via">
+            Sannomiya Sta. (Kobe New Transit)</p>
+        <p class="downarrow route-via">
+            Transfer (5min walk)
+        </p>
+        <p>
+            JR Sannomiya Sta.
+        </p>
+        <p class="downarrow route-via">
+            JR Special Rapid (approx. 50min)
+        </p>
+        <p class="route-end">JR Kyoto Station</p>
+        This route is easy and sufficiently fast.  
+        So Shinkansen is not recommended.  
+        </li>
+    </ul>
+    <!-- 成田から -->
+    <h2 id="from-NRT">From Narita Airport (NRT)</h2>
+    <ul>
+        <!-- 成田エクスプレス + のぞみ -->
+        <li>Route 1:
+        <p class="route-start">Narita Airport</p>
+        <p class="downarrow route-via">
+            Narita Express (railway, approx. 1 hour)
+        </p>
+        <p class="route-via">
+            JR Tokyo Sta. (transfer)
+        </p>
+        <p class="downarrow route-via">
+            Shinkansen Nozomi (approx. 2h 15min)
+        </p>
+        <p class="route-end">JR Kyoto Station</p>
+        </li>
+        <li>Route 2:
+        <p>Narita Airport</p>
+        <p class="downarrow route-via">
+            Skyliner (Limited Express Train)(approx. 40+min)
+        </p>
+        <p class="route-via">
+            Nippori Sta. (transfer)
+        </p>
+        <p class="downarrow route-via">
+            JR Yamanote Line Toward Ueno (approx. 10+min)
+        </p>
+        <p class="route-via">
+            JR Tokyo Sta. (transfer)
+        </p>
+        <p class="downarrow route-via">
+            Shinkansen Nozomi (approx. 2h 15min)
+        </p>
+        <p class="route-end">
+            JR Kyoto Station
+        </p>
+        </li>
+    </ul>
+    <!-- 羽田から -->
+    <h2 id="from HND">From Haneda Airport (HND)</h2>
+    <ul>
+        <li>Route:
+        <p class="route-start">Haneda Airport</p>
+        <p class="downarrow route-via">
+            Keikyu-Kuko Line Limited Express
+            (railway, approx. 20min)
+        </p>
+        <p class="route-via">
+            Shinagawa Sta. (transfer)
+        </p>
+        <p class="downarrow route-via">
+            Shinkansen Nozomi (approx. 2h 05min)
+        </p>
+        <p class="route-end">JR Kyoto Station</p>
+        </li>
+    </ul>
+    </p>
+</main>
+
+<!-- フッタ -->
+<footer class="standard-spacing">
+  <nav>
+    <!-- ALC 2025 のメインのサイトへリンクしておく -->
+    <span>Link: <a href="https://www2.kobe-u.ac.jp/~brendle/alc2025/main.html" target="_blank" rel="noopener noreferrer">⮕ ALC 2025 Main Site</a></span>
+  </nav>
+</footer>
+</body>
+</html>
