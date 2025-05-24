@@ -28,7 +28,7 @@
 </head>
 <body>
 <header>
-    <p>ALC 2025</p>
+    <p>&mdash; ALC 2025 Local Guide &mdash;</p>
     <!-- ページ上部のナビゲーション -->
     <nav>
         <table>
@@ -38,32 +38,46 @@
             <td><a href="index.html">Top</a></td>
             <td><a href="travel.html">Travel</a></td>
             <td><a href="campus-map.html">Campus Map</a></td>
-            <td><a href="lunch.html">Lunch</a></td>
+            <td><a href="food-shop.html">Food/Shop</a></td>
             </tr>
             </tbody>
         </table>
     </nav>
 </header>
+
+<!-- メイン -->
+
 <main>
     <!-- タイトルを大きく表示 -->
-    <h1 class="noto-sans-jp-title title">Getting to Kyoto</h1>
+    <h1 class="noto-sans-jp-title title">
+        Getting to Kyoto
+    </h1>
     <p class="large alert">
         ! This page is under construction. !
     </p>
     
     <!-- 関空から京都へ -->
     <h2 id="from-KIX">From Kansai Airport (KIX)</h2>
-    <ul>
+    <div class="route-box">
         <!-- 「はるか」を使うプラン -->
-        <li>Route 1: (easy and fast)
-        <p class="route-start">Kansai Airport</p>
+        <p class="route-name">
+            Route 1: (easy and fast)
+        </p>
+        <p class="route-start">
+            Kansai Airport
+        </p>
         <p class="downarrow route-via">
             The JR Haruka limited express (approx. 1h 10min)
         </p>
-        <p class="route-end">JR Kyoto Station</p>
-        </li>
+        <p class="route-end">
+            Kyoto Station
+        </p>
+    </div>
+    <div class="route-box">
         <!-- 関空快速 + 京都線新快速 -->
-        <li>Route 2: (cheap)
+        <p class="route-name">
+            Route 2: (cheap)
+        </p>
         <p class="route-start">
             Kansai Airport
         </p>
@@ -71,28 +85,38 @@
             JR Kansaikuko Line Kanku-Rapid (approx. 1h 10min)
         </p>
         <p class="route-via">
-            JR Osaka Station (transfer)
+            Osaka Station (transfer)
         </p>
         <p class="downarrow route-via">
             JR Kyoto Line Special Rapid
             (approx. 30min)
         </p>
-        <p class="route-end">JR Kyoto Station</p>
-        </li>
+        <p class="route-end">
+            Kyoto Station
+        </p>
+    </div>
+    <div class="route-box">
         <!-- リムジンバス -->
-        <li>Route 3: (easy)
-        <p class="route-start">Kansai Airport</p>
+        <p class="route-name">
+            Route 3: (easy)
+        </p>
+        <p class="route-start">
+            Kansai Airport
+        </p>
         <p class="downarrow route-via">
             Kansai Airport Limousine
             (approx. 1h 30min)
         </p>
-        <p class="route-end">Kyoto Sta. Hachijo-guchi</p>
-        </li>
-    </ul>
+        <p class="route-end">
+            Kyoto Sta. Hachijo-guchi
+        </p>
+    </div>
     <!-- 神戸空港から -->
     <h2 id="from-UKB">From Kobe Airport (UKB)</h2>
-    <ul>
-        <li>Route:
+    <div class="route-box">
+        <p class="route-name">
+            Route:
+        </p>
         <p class="route-start">Kobe Airport</p>
         <p class="downarrow route-via">
             Portliner (Kobe New Transit railway)
@@ -101,7 +125,7 @@
         <p class="route-via">
             Sannomiya Sta. (Kobe New Transit)</p>
         <p class="downarrow route-via">
-            Transfer (5min walk)
+            Walk (3min)
         </p>
         <p>
             JR Sannomiya Sta.
@@ -109,30 +133,43 @@
         <p class="downarrow route-via">
             JR Special Rapid (approx. 50min)
         </p>
-        <p class="route-end">JR Kyoto Station</p>
-        This route is easy and sufficiently fast.  
-        So Shinkansen is not recommended.  
-        </li>
-    </ul>
+        <p class="route-end">Kyoto Station</p>
+    </div>
+    <p>
+        The route above is easy and fast enough, 
+        so taking the Shinkansen is not recommended.  
+    </p>
     <!-- 成田から -->
     <h2 id="from-NRT">From Narita Airport (NRT)</h2>
-    <ul>
-        <!-- 成田エクスプレス + のぞみ -->
-        <li>Route 1:
-        <p class="route-start">Narita Airport</p>
+    <!-- 成田エクスプレス + のぞみ -->
+    <div class="route-box">
+        <p class="route-name">
+            Route 1:
+        </p>
+        <p class="route-start">
+            Narita Airport
+        </p>
         <p class="downarrow route-via">
             Narita Express (railway, approx. 1 hour)
         </p>
         <p class="route-via">
-            JR Tokyo Sta. (transfer)
+            Tokyo Sta. (transfer)
         </p>
         <p class="downarrow route-via">
             Shinkansen Nozomi (approx. 2h 15min)
         </p>
-        <p class="route-end">JR Kyoto Station</p>
-        </li>
-        <li>Route 2:
-        <p>Narita Airport</p>
+        <p class="route-end">
+            Kyoto Sta.
+        </p>
+    </div>
+    <!-- スカイライナー + のぞみ -->
+    <div class="route-box">
+        <p class="route-name">
+            Route 2:
+        </p>
+        <p class="route-start">
+            Narita Airport
+        </p>
         <p class="downarrow route-via">
             Skyliner (Limited Express Train)(approx. 40+min)
         </p>
@@ -143,21 +180,22 @@
             JR Yamanote Line Toward Ueno (approx. 10+min)
         </p>
         <p class="route-via">
-            JR Tokyo Sta. (transfer)
+            Tokyo Sta. (transfer)
         </p>
         <p class="downarrow route-via">
             Shinkansen Nozomi (approx. 2h 15min)
         </p>
         <p class="route-end">
-            JR Kyoto Station
+            Kyoto Station
         </p>
-        </li>
-    </ul>
+    </div>
     <!-- 羽田から -->
     <h2 id="from HND">From Haneda Airport (HND)</h2>
-    <ul>
-        <li>Route:
-        <p class="route-start">Haneda Airport</p>
+    <div class="route-box">
+        <p class="route-name">Route:</p>
+        <p class="route-start">
+            Haneda Airport
+        </p>
         <p class="downarrow route-via">
             Keikyu-Kuko Line Limited Express
             (railway, approx. 20min)
@@ -168,9 +206,8 @@
         <p class="downarrow route-via">
             Shinkansen Nozomi (approx. 2h 05min)
         </p>
-        <p class="route-end">JR Kyoto Station</p>
-        </li>
-    </ul>
+        <p class="route-end">Kyoto Station</p>
+    </div>
     </p>
 </main>
 
