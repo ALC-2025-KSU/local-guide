@@ -351,6 +351,8 @@ hr {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .description-of-map th {
