@@ -366,6 +366,14 @@ hr {
   line-height: 2.5rem;
 }
 
+span.blug-bg {
+  background-color: #123293;
+}
+
+span.green-bg {
+  background-color: #63ae48;
+}
+
 .blue-bg th {
   background: #123293;
 }
