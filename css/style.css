@@ -32,6 +32,10 @@ header {
   z-index: 10;  /* 隠されないようにする。10 という値は適当。 */
 }
 
+header p {
+  margin-top: 0.2rem;
+}
+
 /*
  * ページのメインとなる部分
  */
@@ -40,6 +44,17 @@ main {
   margin-top: 6.8rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+/*
+ * セクション
+ */
+div.section2 {  /* h2 に続くセクション */
+  margin-left: 1.4rem;
+}
+
+div.section3 {
+  margin-left: 2rem;
 }
 
 /*
@@ -52,8 +67,16 @@ p {
   margin-bottom: 0.7rem;
 }
 
+.section3 p {
+  margin-left: 1.5rem;
+}
+
 .text-indent {
   margin-left: 1.5rem;
+}
+
+.text-indent3 {
+  margin-left: 3rem;
 }
 
 /*
@@ -95,7 +118,7 @@ h3 {
     font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     border-bottom: dotted burlywood;
     padding-left: 0.8rem;
     padding-top: 0.3rem;
@@ -133,7 +156,7 @@ footer a:hover {
 }
 
 .post-img {
-  object-fit: cover;
+  object-fit: cover;  /* 表示幅をちょうどカバーするように自動で拡大・縮小 */
 }
 
 .resize-img img {
@@ -281,6 +304,17 @@ header .navi td {  /* テーブルのセル */
   font-weight: 500;
 }
 
+div.jump-table {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-style: double;
+  border-color: lightblue;
+  /* border-color: lightblue; */
+  border-radius: 1.5rem;
+}
+
 /*
  * 水平の区切り線
  */
@@ -289,4 +323,60 @@ hr {
   border-top:dashed 1px darkslategray;
   height:1px;
   width:100%;
+}
+
+/*
+ * 文字を丸で囲む
+ */
+.circle {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  /* border: solid 0.1rem white; */
+  color: white;
+  background: #123293;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+/*
+ * キャンパスマップの説明
+ */
+.description-of-map tr {
+  margin-bottom: 0.5rem;
+}
+
+.description-of-map td {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  padding-left: 0.5rem;
+}
+
+.description-of-map th {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: white;
+  /* background: #123293;*/
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.blue-bg th {
+  background: #123293;
+}
+
+.green-bg th {
+  background-color: #63ae48;
+}
+
+/*
+ * センタリング
+ */
+p.center {
+  text-align: center;
 }
