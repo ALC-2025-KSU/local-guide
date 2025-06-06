@@ -390,3 +390,7 @@ span.green-bg {
 p.center {
   text-align: center;
 }
+
+summary {
+  font-size: 1.8rem;
+}
