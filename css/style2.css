@@ -18,14 +18,17 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   color: darkslategray;
   background-color: antiquewhite;
-  padding-top: 0.5rem;
-  padding-bottom: 0rem;
+  padding-top: 0.8rem;
+  padding-bottom: 6.8rem;
 }
 
 /*
  * ページのヘッダ
  */
 header {
+  position: fixed;
+  /* top: 0; */
+  bottom: 0;
   margin-left: 1rem;
   background-color: inherit;
   width: 100%;  /* 右端まで伸ばしておく */
@@ -44,8 +47,6 @@ main {
   /* margin-top: 6.8rem; */
   margin-left: 1rem;
   margin-right: 1rem;
-  /* margin-bottom: 15rem; */
-  padding-bottom: 8rem;
 }
 
 /*
@@ -136,10 +137,6 @@ header nav td:hover {
   background-color: paleturquoise;
 }
 
-footer nav td:hover {
-  background-color: paleturquoise;
-}
-
 main a:hover {
   background-color: paleturquoise;
 }
@@ -202,7 +199,7 @@ nav {
 }
 
 /*
- * ショートカットナビゲーションの実装
+ * 上部ナビゲーションの実装
  */
 header nav {
   margin-top: 0rem; /* 上部マージンは無し */
@@ -400,51 +397,4 @@ p.center {
 
 summary {
   font-size: 2.0rem;
-}
-
-footer {
-  border-top: dotted 1px darkslategray;
-  position: fixed;
-  bottom: 0;
-  /** margin-left: 1rem;*/
-  padding-left: 1rem;
-  background-color: inherit;
-  width: 100%;  /* 右端まで伸ばしておく */
-  z-index: 10;  /* 隠されないようにする。10 という値は適当。 */
-}
-
-footer p {
-  margin-top: 0.2rem;
-}
-
-/*
- * ショートカットナビゲーションの実装
- */
-footer nav {
-  margin-top: 0rem; /* 上部マージンは無し */
-  margin-bottom: 0.5rem;
-}
-
-footer .navi {
-  /* display: flex; */
-  font-size: 1.4rem;
-  text-align: center;
-  background-color: inherit;
-}
-
-footer .navi .current {
-  background: #ccc;
-  color: #fff;
-}
-
-footer nav table {
-  /* テーブルのセルがピッタリくっつくようにする */
-  border-collapse: collapse;
-}
-
-footer .navi td {  /* テーブルのセル */
-  /* 細い灰色の枠線で囲む */
-  border: 1px solid rgb(160 160 160);
-  /* パディング: 上下に 8、左右に 10 */
-  padding: 8px 10px;
 }
