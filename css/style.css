@@ -100,10 +100,10 @@ h1 {
   border-radius: 10px;
   margin-bottom: 1.5rem;
   /* padding-top: 0.45rem; */
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
   padding-left: 1.0rem;
   padding-right: 1.0rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 
 h2 {
