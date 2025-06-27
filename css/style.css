@@ -56,7 +56,7 @@ div.section2 {  /* h2 に続くセクション */
 }
 
 div.section3 {
-  margin-left: 2rem;
+  margin-left: 0.6rem;
 }
 
 /*
@@ -93,7 +93,7 @@ h1 {
     padding-bottom: 0.35rem;
 }
 
-.title {
+h1.title {
   text-align: center;
   background-color: burlywood;
   font-size: 4.5rem;
@@ -103,11 +103,12 @@ h1 {
   padding-top: 0.5rem;
   padding-left: 1.0rem;
   padding-right: 1.0rem;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.45rem;
 }
 
 h2 {
     font-size: 2.5rem;
+    font-weight: 500;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     border-bottom: dashed burlywood;
@@ -119,6 +120,7 @@ h2 {
 
 h3 {
     font-size: 2rem;
+    font-weight: 500;
     margin-top: 1rem;
     margin-bottom: 1rem;
     /* margin-left: 2rem; */
@@ -296,7 +298,7 @@ header .navi td {  /* テーブルのセル */
 } 
 
 .route-box {
-  margin-left: 1rem;
+  margin-left: 0rem;
   margin-right: 1rem;
   margin-top: 0.5rem;
   padding: 1rem;
@@ -400,6 +402,12 @@ p.center {
 
 summary {
   font-size: 2.0rem;
+  font-weight: 500;
+  color: #367cf6;
+}
+
+summary:hover {
+  background-color: paleturquoise;
 }
 
 footer {
