@@ -172,6 +172,14 @@ footer a:hover {
   width: 100%;
 }
 
+.auto-shrink img {
+  max-width: 100%;
+}
+
+.max-width-150 img {
+  max-width: 150%;
+}
+
 .standard-spacing {
   margin-left: 1rem;
   margin-right: 1rem;
