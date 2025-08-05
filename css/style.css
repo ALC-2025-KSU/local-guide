@@ -478,3 +478,8 @@ figcaption {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
+figure.full-width {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
