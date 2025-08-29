@@ -168,6 +168,9 @@ footer a:hover {
   font-style: normal;
 }
 
+/*
+ * 画像
+ */
 .post-img {
   object-fit: cover;  /* 表示幅をちょうどカバーするように自動で拡大・縮小 */
 }
@@ -182,6 +185,15 @@ footer a:hover {
 
 .max-width-150 img {
   max-width: 150%;
+}
+
+.access-guide img {
+  width: 400px;
+  height: 300px;
+}
+
+p .access-img {
+  margin-top: 10.5rem;
 }
 
 .standard-spacing {
