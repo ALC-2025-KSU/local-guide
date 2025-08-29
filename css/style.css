@@ -51,6 +51,10 @@ main {
 /*
  * セクション
  */
+div.section1 {  /* h1 に続くセクション */
+  margin-left: 0.6rem;
+}
+
 div.section2 {  /* h2 に続くセクション */
   margin-left: 1.4rem;
 }
@@ -198,10 +202,32 @@ ul {
   margin-right: 2.5rem; */
 }
 
-li {
+ul li {
   font-size: 1.6rem;
   margin-left: 2rem;
   /* margin-right: 2rem; */
+}
+
+ol {
+  /* list-style-type: decimal;*/
+  counter-reset: cnt;  /* カウンタをリセット */
+}
+
+.section1 ol {
+  margin-left: 1.6rem;
+}
+
+.section3 ol {
+  margin-left: 3.2rem;
+}
+
+ol li {
+  font-size: 1.6rem;
+  counter-increment: cnt;
+}
+
+ol li::marker {
+  content: counter(cnt) ". ";  /* カウンタの値を表示 */
 }
 
 /*
