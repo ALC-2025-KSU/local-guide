@@ -243,6 +243,31 @@ ol li::marker {
 }
 
 /*
+ * テーブル (説明用)
+ */
+table.description {
+  font-size: 1.6rem;
+  border-collapse: collapse; /* 枠線が二重にならないようにする */
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+table.description th {
+  border: 1px solid darkslategray; /* 枠線 */
+  padding: 0.5rem;                 /* セル内の余白 */
+  text-align: left;                /* 左寄せ */
+  background-color: lightcyan; /* ヘッダの背景色 */
+}
+
+table.description td {
+  border: 1px solid darkslategray; /* 枠線 */
+  padding: 0.5rem;                 /* セル内の余白 */
+  text-align: left;                /* 左寄せ */
+  background-color: floralwhite;       /* セルの背景色 */
+}
+
+/*
  * ナビ (上部ナビに限らない)
  */
 nav {
