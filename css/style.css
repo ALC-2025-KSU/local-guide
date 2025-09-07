@@ -36,6 +36,14 @@ header p {
   margin-top: 0.2rem;
 }
 
+footer {
+  /* margin-left: 1rem;*/
+  margin-left: 0rem;
+  background-color: inherit;
+  width: 100%;  /* 右端まで伸ばしておく */
+  z-index: 10;  /* 隠されないようにする。10 という値は適当。 */
+}
+
 /*
  * ページのメインとなる部分
  */
@@ -46,7 +54,7 @@ main {
   margin-right: 1rem;
   /* margin-bottom: 15rem; */
   /* 下部のナビと重ならないようにマージンをとる */
-  padding-bottom: 10rem;
+  padding-bottom: 12rem;
 }
 
 /*
@@ -285,7 +293,7 @@ table.description td {
 }
 
 /*
- * ナビ (上部ナビに限らない)
+ * ナビ (下部ナビに限らない)
  */
 nav {
   font-size: 1.6rem;
@@ -294,29 +302,33 @@ nav {
 /*
  * ショートカットナビゲーションの実装
  */
-header nav {
+footer nav {
   margin-top: 0rem; /* 上部マージンは無し */
   margin-bottom: 0.5rem;
 }
 
-header .navi {
+footer nav p {
+  margin-left: 0rem;
+}
+
+footer .navi {
   /* display: flex; */
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   background-color: inherit;
 }
 
-header .navi .current {
+footer .navi .current {
   background: #ccc;
   color: #fff;
 }
 
-header nav table {
+footer nav table {
   /* テーブルのセルがピッタリくっつくようにする */
   border-collapse: collapse;
 }
 
-header .navi td {  /* テーブルのセル */
+footer .navi td {  /* テーブルのセル */
   /* 細い灰色の枠線で囲む */
   border: 1px solid rgb(160 160 160);
   /* パディング: 上下に 8、左右に 10 */
@@ -511,7 +523,7 @@ footer {
   position: fixed;
   bottom: 0;
   /** margin-left: 1rem;*/
-  padding-left: 1rem;
+  /* padding-left: 1rem;*/
   background-color: inherit;
   width: 100%;  /* 右端まで伸ばしておく */
   z-index: 10;  /* 隠されないようにする。10 という値は適当。 */
@@ -527,6 +539,7 @@ footer p {
 footer nav {
   margin-top: 0rem; /* 上部マージンは無し */
   margin-bottom: 0.5rem;
+  padding-top: 0rem;
 }
 
 footer .navi {
@@ -549,8 +562,14 @@ footer nav table {
 footer .navi td {  /* テーブルのセル */
   /* 細い灰色の枠線で囲む */
   border: 1px solid rgb(160 160 160);
-  /* パディング: 上下に 8、左右に 10 */
-  padding: 8px 10px;
+  /* パディング: 上下に 6、左右に 6 */
+  padding: 6px 6px;
+}
+
+footer p.links {
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 /* 
