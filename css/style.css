@@ -45,7 +45,8 @@ main {
   margin-left: 1rem;
   margin-right: 1rem;
   /* margin-bottom: 15rem; */
-  padding-bottom: 8rem;
+  /* 下部のナビと重ならないようにマージンをとる */
+  padding-bottom: 10rem;
 }
 
 /*
